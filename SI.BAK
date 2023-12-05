@@ -1,0 +1,13 @@
+/* A C Programme to calculate Simple Interest*/
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+int t;
+float p,r,si;
+printf("Enter the value of P,R and T:");
+scanf("%f%f%d",&p,&r,&t);
+si=(p*r*t)/100;
+printf("S.I.=%.2f",si);
+getch();
+}

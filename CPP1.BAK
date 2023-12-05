@@ -1,0 +1,21 @@
+/* A C++ Programme to find the greatest no. among three nos. */
+#include<iostream.h>
+#include<conio.h>
+void great(int a, int b, int c)
+{
+	if(a>b && a>c)
+	cout<<"\n The Greatest No. is "<<a;
+	if(b>a && b>c)
+	cout<<"\n The Greatest No. is "<<b;
+	if(c>a && c>b)
+	cout<<"\n The Greatest No. is "<<c;
+}
+void main()
+{
+	int a, b, c;
+	clrscr();
+	cout<<"\n Enter The Value of A, B and C : ";
+	cin>>a>>b>>c;
+	great(a,b,c);
+	getch();
+}

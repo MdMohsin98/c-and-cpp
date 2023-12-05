@@ -1,0 +1,40 @@
+/* Employee*/
+#include<stdio.h>
+#include<stdlib.h>
+struct Employee
+{
+char name[20];
+char address[30];
+int ID;
+int bs;
+int da;
+int ta;
+int hra;
+void main()
+{
+struct Employee emp[100];
+int i,n,ts;
+long int gt=0;
+printf("\n Enter Total No. of Employees");
+scanf("%d", &n);
+for(i=0;i<n;i++)
+{
+fflush(stdin);
+printf("\n Enter Name and Address");
+gets(emp[i].name);
+gets(emp[i].address);
+printf("\n Enter ID,bs,hra,da,ta");
+scanf("%d%d%d%d%d", &emp[i].ID,&emp[i].bs,&emp[i].hra,&emp[i].da,&emp[i].ta);
+}
+printf("\n Information\n");
+for(i=0;i<n;i++)
+{
+ts=0;
+printf("\n Name=%s \nAddress=%s",emp[i].name, emp[i].address);
+printf("\n ID=%d,BS=%d,HRA=%d,DA=%d,TA=%d",emp[i].ID,emp[i].bs,emp[i].hra,emp[i].da,emp[i].ta);
+ts=emp[i].bs+emp[i].da+emp[i].ta+emp[i].hra;
+printf("\n Total Salary=%d",ts);
+gt+=ts;
+}
+printf("\n Grand Total=%ld",gt);
+}

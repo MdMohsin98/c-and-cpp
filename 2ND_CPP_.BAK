@@ -1,0 +1,18 @@
+/* A C++ Programme to check whether the given numbers is even or odd. */
+#include<iostream.h>
+#include<conio.h>
+void check(int a)
+{
+if(a%2==0)
+cout<<"The given number is even :";
+else
+cout<<"The given number is odd:";
+}
+void main()
+{
+int a;
+clrscr();
+cout<<"Enter any no.";
+cin>>a;
+getch();
+}
